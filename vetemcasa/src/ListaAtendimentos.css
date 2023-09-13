@@ -4,3 +4,8 @@
     min-width: 52vw;
     max-width: 52vw;
 }
+
+.material-symbols-outlined close{
+    font-size: calc(10px + 2vmin);
+    color: yellow;
+}

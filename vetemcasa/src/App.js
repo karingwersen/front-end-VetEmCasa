@@ -10,7 +10,9 @@ function App() {
       <header className="App-header">
         <div className='apresentacao'>
           <p>
-            Bem vindo ao Vet em Casa! O site que facilita o seu atendimento veterinário domiciliar
+            Bem vindo ao Vet em Casa! 
+            <br/>
+            O site que facilita o seu atendimento veterinário domiciliar
           </p>
           <Logo />
         </div>

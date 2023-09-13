@@ -23,6 +23,7 @@
   max-height: 20vh;
   min-width: 70vw;
   max-width: 70vw;
+  font-weight: bold;
 }
 
 .conteudo{
@@ -43,4 +44,6 @@
   max-width: 52vw;
   background-color: #9966ff;
   border-radius: 50px;
+  color: #f0f0f0;
+  font-weight: bold;
 }
