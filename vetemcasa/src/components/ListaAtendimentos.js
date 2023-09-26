@@ -1,5 +1,7 @@
 import React from "react";
 import '../ListaAtendimentos.css'
+import { ApagaAtendimento } from "./ApagaAtendimento";
+import { AtualizaAtendimento } from "./AtualizaAtendimento";
 import axios from 'axios'
 
 
@@ -44,7 +46,7 @@ export class ListaAtendimentos extends React.Component{
 
         if (this.state.responseDataAtendimentos.length > 0){
             this.state.atendimentosDisplayData = this.state.responseDataAtendimentos.map(function (atendimento) {
-                return <p key={atendimento.id}>Pet: {atendimento.pet} | Atendimento: {atendimento.id}   <span class="material-symbols-outlined">edit_square</span>   <span class="material-symbols-outlined">close</span> </p> 
+                return <p key={atendimento.id}>Pet: {atendimento.pet} | Atendimento: {atendimento.id}   <AtualizaAtendimento atendimento={atendimento}/>   <ApagaAtendimento id={atendimento.id}/> </p> 
             })
         }
 

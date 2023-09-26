@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 
-export class ApagaAtendimentoAtendimento extends React.Component{
+export class ApagaAtendimento extends React.Component{
     constructor(props){
         super(props)
     }
@@ -12,9 +12,7 @@ export class ApagaAtendimentoAtendimento extends React.Component{
     sendData(){
         var response;
         var response_status_code;
-        var id_atendimento = ""; 
-
-        form.addEventListener('submit', (event) => {event.preventDefault()})
+        var id_atendimento = this.props.id; 
         
         response = axios.delete("http://localhost:5000/api/v1/apagar_atendimento?id=" + id_atendimento, {
           
@@ -22,7 +20,8 @@ export class ApagaAtendimentoAtendimento extends React.Component{
             response_status_code = response.status
             
             if (response_status_code === 204){
-                window.alert("Atendimento apagado!")
+                window.alert("Atendimento apagado!");
+                this.forceUpdate();
             } else {
                 window.alert("Atendimento não pôde ser apagado.")
             }
@@ -32,8 +31,6 @@ export class ApagaAtendimentoAtendimento extends React.Component{
     }
 
     render(){
-
-        return()
-
+        return <span class="material-symbols-outlined" onClick={()=>this.sendData()}>close</span>
     }
 }

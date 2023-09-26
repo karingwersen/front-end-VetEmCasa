@@ -21,9 +21,10 @@
   flex-direction: row;
   min-height: 20vh;
   max-height: 20vh;
-  min-width: 70vw;
-  max-width: 70vw;
+  min-width: 90vw;
+  max-width: 90vw;
   font-weight: bold;
+  color:#600080;
 }
 
 .conteudo{
@@ -42,7 +43,7 @@
   max-height: 70vh;
   min-width: 52vw;
   max-width: 52vw;
-  background-color: #9966ff;
+  background-color: #600080;
   border-radius: 50px;
   color: #f0f0f0;
   font-weight: bold;
